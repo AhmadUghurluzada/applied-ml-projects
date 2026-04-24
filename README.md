@@ -1,4 +1,4 @@
-# Machine Learning Mini Projects
+# Applied Machine Learning Projects
 
 A collection of three end-to-end machine learning projects covering the core paradigms of supervised and unsupervised learning — regression, classification, and clustering.
 
