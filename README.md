@@ -35,9 +35,10 @@ Predict whether a passenger survived the Titanic disaster using passenger featur
 
 | Model | Train Acc | Test Acc | ROC-AUC |
 |-------|-----------|----------|---------|
-| Logistic Regression | — | — | — |
-| Decision Tree (original) | high | lower | 0.802 |
-| Decision Tree (tuned) | — | — | — |
+| Logistic Regression | 0.795 | 0.810 | 0.791 |
+| Random Forest | 0.983 | 0.810 | 0.791 |
+| Decision Tree (original) | 0.983 | 0.810 | 0.802 |
+| Decision Tree (tuned) | 0.837 | 0.788 | — |
 
 The tuned Decision Tree reduced the train/test accuracy gap from **0.173 → 0.041**, resolving overfitting while maintaining the lowest false negative count (16 missed survivors).
 
@@ -65,11 +66,11 @@ Predict median house values across California census blocks using demographic an
 
 ### Results
 
-| Model | R² (Test) | MAE |
+| Model | R² | MAE |
 |-------|-----------|-----|
-| Linear Regression | — | — |
-| Decision Tree | — | — |
-| Gradient Boosting (original) | — | — |
+| Linear Regression | 0.493 | ~$54,471 |
+| Decision Tree | 0.479 | ~$56,811 |
+| Gradient Boosting (original) | 0.708 | ~$43,464 |
 | **Gradient Boosting (tuned)** | **0.725** | **~$41,686** |
 
 The model performs well in the $100k–$350k range where data is most concentrated. Performance degrades at the upper end due to the $500,001 dataset cap.
