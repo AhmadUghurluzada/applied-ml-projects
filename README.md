@@ -11,7 +11,7 @@ A collection of three end-to-end machine learning projects covering the core par
 | 1 | Titanic Survival Prediction | Classification | Titanic (seaborn) | Decision Tree (tuned) |
 | 2 | California Housing Prices | Regression | California Housing CSV | Gradient Boosting (tuned) |
 | 3 | Mall Customer Segmentation | Unsupervised / Clustering | Mall Customers CSV | K-Means (K=5) + PCA |
-
+| 4 | MNIST Handwritten Digit Classification | Classification | MNIST | - |
 ---
 
 ## 1. Titanic Survival Prediction
@@ -114,12 +114,29 @@ Group mall customers into meaningful segments based on annual income and spendin
 
 ---
 
+## 4. MNIST Handwritten Digit Classification
+**Type:** Neural Network — Multiclass Classification  
+**Dataset:** MNIST (70,000 images, 28×28 pixels)  
+**Goal:** Classify handwritten digits 0-9  
+
+**Architecture:** Flatten → Dense(128, ReLU) → Dense(64, ReLU) → Dense(10, Softmax)  
+**Result:** 97.74% test accuracy  
+
+**Key skills:** Neural network architecture, forward propagation,
+activation functions, overfitting detection, confusion matrix interpretation  
+
+### Libraries
+`pandas` · `numpy` · `matplotlib` · `tenserflow` · `seaborn`
+
+---
+
 ## Repository Structure
 
 ```
 ├── Titanic-Classification.ipynb
 ├── Housing_Prices-Regression.ipynb
 ├── Mall_Customers-Unsupervised.ipynb
+├── MNIST.ipynb
 ├── data/
 │   ├── housing.csv
 │   └── Mall_Customers.csv
@@ -128,10 +145,8 @@ Group mall customers into meaningful segments based on annual income and spendin
 
 ---
 
-## Setup
+## How to Run
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-All notebooks are self-contained and can be run top-to-bottom. Make sure the CSV data files are placed in a `data/` folder.
+1. Clone the repository
+2. Install dependencies: `pip install pandas numpy scikit-learn matplotlib seaborn tensorflow`
+3. Open any notebook with Jupyter and run cells in order
