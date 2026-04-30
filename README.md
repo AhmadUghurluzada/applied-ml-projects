@@ -130,13 +130,29 @@ activation functions, overfitting detection, confusion matrix interpretation
 `pandas` · `numpy` · `matplotlib` · `tenserflow` · `seaborn`
 
 ---
+## 5. Credit Card Fraud Detection
+**Type:** Supervised Learning — Imbalanced Binary Classification  
+**Dataset:** Credit Card Fraud Detection (Kaggle) — 284,807 transactions  
+**Link:** https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud  
+
+> ⚠️ Dataset not included in this repo due to file size.
+> Download from the Kaggle link above and place in a `/data` folder.
+
+**Goal:** Detect fraudulent transactions where only 0.17% of data is fraud
+**Pipeline:** Stratified Split → StandardScaler → SMOTE → Random Forest → Threshold Tuning  
+**Best result:** ROC-AUC = 0.964, Recall = 89% at threshold 0.3  
+
+**Key skills:** Class imbalance handling, SMOTE, precision-recall tradeoff,
+threshold tuning, ROC-AUC evaluation.
+
+---
 
 ## Repository Structure
-
 ```
 ├── Titanic-Classification.ipynb
 ├── Housing_Prices-Regression.ipynb
 ├── Mall_Customers-Unsupervised.ipynb
+├── Fraud_Detection.ipynb
 ├── MNIST.ipynb
 ├── data/
 │   ├── housing.csv
@@ -151,20 +167,3 @@ activation functions, overfitting detection, confusion matrix interpretation
 1. Clone the repository
 2. Install dependencies: `pip install pandas numpy scikit-learn matplotlib seaborn tensorflow`
 3. Open any notebook with Jupyter and run cells in order
-
-
-## 5. Credit Card Fraud Detection
-**Type:** Supervised Learning — Imbalanced Binary Classification  
-**Dataset:** Credit Card Fraud Detection (Kaggle) — 284,807 transactions  
-**Link:** https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud  
-
-> ⚠️ Dataset not included in this repo due to file size.
-> Download from the Kaggle link above and place in a `/data` folder.
-
-**Goal:** Detect fraudulent transactions where only 0.17% of data is fraud
-
-**Pipeline:** Stratified Split → StandardScaler → SMOTE → Random Forest → Threshold Tuning  
-**Best result:** ROC-AUC = 0.964, Recall = 89% at threshold 0.3  
-
-**Key skills:** Class imbalance handling, SMOTE, precision-recall tradeoff,
-threshold tuning, ROC-AUC evaluation.
