@@ -12,6 +12,7 @@ A collection of three end-to-end machine learning projects covering the core par
 | 2 | California Housing Prices | Regression | California Housing CSV | Gradient Boosting (tuned) |
 | 3 | Mall Customer Segmentation | Unsupervised / Clustering | Mall Customers CSV | K-Means (K=5) + PCA |
 | 4 | MNIST Handwritten Digit Classification | Classification | MNIST | - |
+| 5 | Fraud Detection | Classification | Creditcard | Random Forest|
 ---
 
 ## 1. Titanic Survival Prediction
